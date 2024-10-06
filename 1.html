@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsif Doank</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      padding-top: 56px;
+    }
+    .navbar {
+      background-color: #e71728;
+    }
+    .navbar-brand {
+      color: #fff;
+    }
+    .navbar-toggler {
+      border-color: #fff;
+    }
+    .section-utama {
+      background-color: #fff;
+      padding: 50px 20px;
+    }
+    .section-utama img {
+      max-width: 100%;
+      height: auto;
+    }
+    .logo-img {
+      width: 600px; /* Adjusted width for better balance */
+      height: auto; /* Maintain aspect ratio */
+    }
+    .footer {
+      background-color: #8aee18;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .footer p {
+      margin: 0;
+    }
+    .gallery {
+      padding: 20px 0;
+    }
+    .gallery img {
+      width: 100%; 
+      height: 200px; /* Fixed height for uniformity */
+      object-fit: cover; /* Ensure images cover the area without stretching */
+    }
+    .gallery-item {
+      text-align: center; /* Center align images and prices */
+      margin-bottom: 20px; /* Add margin below each item */
+    }
+    .gallery-item p {
+      font-family: 'Lora', serif; /* Elegant font for prices */
+      font-weight: bold; /* Bold font */
+      font-size: 1.25rem; /* Adjust font size */
+      color: #343a40; /* Dark color for visibility */
+      margin-top: 10px; /* Space above price text */
+    }
+    .btn-small {
+      padding: 0.25rem 0.5rem; /* Adjust padding */
+      font-size: 0.875rem; /* Adjust font size */
+      margin: 0 5px; /* Add some margin between buttons */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">SPORT-DOANK</a>
+      <a class="navbar-brand" href="#">Agam Gunawan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary btn-small" onclick="window.location.href='2.html'">Log In</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary btn-small" onclick="window.location.href='3.html'">Survey</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary btn-small" onclick="window.location.href='4.html'">Feedback</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary btn-small" onclick="window.location.href='5.html'">Registrasi</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary btn-small" onclick="window.location.href='6.html'">Pemesanan</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section Utama -->
+  <section class="section-utama">
+    <div class="container text-center">
+      <h2>WELLCOME to SPORT DOANK</h2>
+      <p>Gunakan Produk Terbaik Tahun Ini!</p>
+      <img class="logo-img" src="logo.png" alt="Banner Image">
+    </div>
+  </section>
+
+  <!-- Galeri -->
+  <section class="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 gallery-item">
+          <img src="Raket1.jpg" alt="Gallery Image 1">
+          <p> Victor Thruster-Rp. 650.000</p> <!-- Price below image -->
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 gallery-item">
+          <img src="Raket2.jpg" alt="Gallery Image 2">
+          <p>Yonex Truster-Rp 150.000</p> <!-- Price below image -->
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 gallery-item">
+          <img src="Raket3.jpg" alt="Gallery Image 3">
+          <p>Gosen 3400-Harga: Rp 200.000</p> <!-- Price below image -->
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 gallery-item">
+          <img src="cock1.jpg" alt="Gallery Image 4">
+          <p>Harga: Rp 250.000</p> <!-- Price below image -->
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 gallery-item">
+          <img src="cock2.png" alt="Gallery Image 5">
+          <p>Harga: Rp 300.000</p> <!-- Price below image -->
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 gallery-item">
+          <img src="cock3.jpg" alt="Gallery Image 6">
+          <p>Harga: Rp 350.000</p> <!-- Price below image -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Contact:murray.top@gmail.com | +62 88888888888</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar code from above -->
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <h2 class="text-center">Survey</h2>
+        <form class="p-4 border rounded shadow-sm" onsubmit="return submitForm()">
+            <div class="mb-3">
+                <label class="form-label">Jenis raket apa yang anda suka?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="fiksi">
+                    <label class="form-check-label" for="fiksi">Offensive</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="non-fiksi">
+                    <label class="form-check-label" for="non-fiksi">Deffensive</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="sains">
+                    <label class="form-check-label" for="sains">Neeting</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="sejarah">
+                    <label class="form-check-label" for="sejarah">Casual</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Berapa Sering Anda Bermain Badminton Dalam 1 Minggu?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="jumlahLiquid" id="liquid1" value="1-2">
+                    <label class="form-check-label" for="liquid1">1-2</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="jumlahLiquid" id="liquid3" value="3-4">
+                    <label class="form-check-label" for="liquid3">3-4</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="jumlahLiquid" id="liquid5" value="5+">
+                    <label class="form-check-label" for="liquid5">Setiap Hari</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            // Perform any validation or processing here if needed
+            window.location.href = '4.html'; // Redirect to 4.html
+            return false; // Prevent default form submission
+        }
+    </script>
+</body>
+</html>

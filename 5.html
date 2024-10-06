@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar code from above -->
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <h2 class="text-center">Form Registrasi</h2>
+        <form class="p-4 border rounded shadow-sm" onsubmit="return submitForm()">
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan alamat email" required>
+            </div>
+            <div class="mb-3">
+                <label for="Password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="Password" placeholder="Masukkan Password" required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            // Perform any validation or processing here if needed
+            window.location.href = '6.html'; // Redirect to 6.html
+            return false; // Prevent default form submission
+        }
+    </script>
+</body>
+</html>

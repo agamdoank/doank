@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar code from above -->
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <h2 class="text-center">Customer Feedback</h2>
+        <form class="p-4 border rounded shadow-sm" onsubmit="return submitForm()">
+            <div class="mb-3">
+                <label for="feedbackTopic" class="form-label">Pilih Jenis Raket</label>
+                <select class="form-select" id="feedbackTopic" required>
+                    <option value="">Pilih Jenis Raket</option>
+                    <option value="Creamy">Offense</option>
+                    <option value="Fruits">Defense</option>
+                    <option value="Bread/Cake">Nett</option>
+                    <option value="Juice">Casual</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="feedbackDetail" class="form-label">Detail Feedback</label>
+                <textarea class="form-control" id="feedbackDetail" rows="4" placeholder="Masukkan detail feedback Anda" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            // Perform any validation or processing here if needed
+            window.location.href = '5.html'; // Redirect to 5.html
+            return false; // Prevent default form submission
+        }
+    </script>
+</body>
+</html>
